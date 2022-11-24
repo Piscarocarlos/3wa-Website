@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Route, Routes } from 'react-router-loading';
+import Coming from './pages/others/Coming';
+import Test from './pages/others/Test';
+import { topbar } from "react-router-loading";
 
 function App() {
+
+  topbar.config({
+      autoRun: false,
+      barThickness: 5,
+      barColors: {
+          0: '#E94034',
+          .3: '#E94034',
+          1.0: '#E94034'
+      },
+      shadowBlur: 5,
+      shadowColor: 'red',
+      className: 'topbar'
+  });
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     
+
+     <Routes maxLoadingTime={1000}>
+        <Route path="/" element={<Coming/>} />
+        <Route path="/test" element={<Test/>} loading  />
+     </Routes>
     </div>
   );
 }
