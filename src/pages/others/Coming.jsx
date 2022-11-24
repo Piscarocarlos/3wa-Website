@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLoadingContext } from "react-router-loading";
 import LogoColor from "../../assets/images/logo-color.png"
@@ -8,14 +8,58 @@ import Shape3 from "../../assets/images/shapes/shape-03-02.png"
 import Shape4 from "../../assets/images/shapes/shape-14-04.png"
 import Shape5 from "../../assets/images/shapes/shape-03-08.png"
 import Shape6 from "../../assets/images/shapes/shape-01-02.png"
+import Typed from 'typed.js';
+import Countdown from 'react-countdown';
 
 export default function Coming() {
-
   const loadingContext = useLoadingContext();
 
   const loading = async () => {
     loadingContext.done();
   };
+
+  useEffect(()=>{
+    var typed = new Typed('.title', {
+      strings: ['We Are Making <br/> Something Specials'],
+      typeSpeed: 100,
+      loop: true,
+      startDelay: 100,
+      showCursor: false,
+    });
+
+  }, [])
+
+  const renderer = ({ days, hours, minutes, seconds, completed }) => {
+    if (completed) {
+    } else {
+      // Render a countdown
+      return <div className="countdown-style-2">
+              <div className="countdown" data-date="2022-12-30">
+                <div className="countdown-container days">
+                  <span className="countdown-value">{days}</span>
+                  <span className="countdown-heading">Days</span>
+                </div>
+                <div className="countdown-container hours">
+                  <span className="countdown-value">{hours}</span>
+                  <span className="countdown-heading">Hours</span>
+                </div>
+                <div className="countdown-container minutes">
+                  <span className="countdown-value">{minutes}</span>
+                  <span className="countdown-heading">Minutes</span>
+                </div>
+                <div className="countdown-container seconds">
+                  <span className="countdown-value">{seconds}</span>
+                  <span className="countdown-heading">Seconds</span>
+                </div>
+              </div>
+            </div>
+    }
+  }
+
+
+
+
+
   return (
    <>
      <div className="main-wrapper">
@@ -28,27 +72,8 @@ export default function Coming() {
                   <Link to="/test">
                     <img src={LogoColor} alt="" className="logo-size" />
                   </Link>
-                  <h1 className="title">We Are Making <br /> Something Specials</h1>
-                  <div className="countdown-style-2">
-                    <div className="countdown" data-date="2022-12-30">
-                      <div className="countdown-container days">
-                        <span className="countdown-value">25</span>
-                        <span className="countdown-heading">Days</span>
-                      </div>
-                      <div className="countdown-container hours">
-                        <span className="countdown-value">23</span>
-                        <span className="countdown-heading">Hours</span>
-                      </div>
-                      <div className="countdown-container minutes">
-                        <span className="countdown-value">38</span>
-                        <span className="countdown-heading">Minutes</span>
-                      </div>
-                      <div className="countdown-container seconds">
-                        <span className="countdown-value">27</span>
-                        <span className="countdown-heading">Seconds</span>
-                      </div>
-                    </div>
-                  </div>
+                  <h1 className="title"></h1>
+                  <Countdown date={Date.now() + 2592000*1000} renderer={renderer}></Countdown>
                   <p className="description">
                     <span className="fw-bold">3W Academy</span> est un 
                     <span className="fw-bold">bootcamp</span> 

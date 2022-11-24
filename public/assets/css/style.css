@@ -82,12 +82,12 @@
     background: #999;
     -webkit-border-radius: 0;
     border-radius: 10px;
+    width: 20px;
 }
 
 html::-webkit-scrollbar {
-  height: 20px;
   width: 10px;
-  background: transparent;
+  background-image: url('../images/bg/coming-soon.jpg');
   border-radius: 10px;
 }
 
@@ -470,7 +470,8 @@ h6,
 h1,
 .h1 {
   font-size: var(--h1);
-  line-height: var(--h1-lineHeight); }
+  line-height: var(--h1-lineHeight);
+height: 130px }
 
 h2,
 .h2 {
