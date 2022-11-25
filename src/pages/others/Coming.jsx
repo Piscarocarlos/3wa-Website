@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useLoadingContext } from "react-router-loading";
 import LogoColor from "../../assets/images/logo-color.png"
