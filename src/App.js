@@ -25,8 +25,8 @@ function App() {
      
 
      <Routes maxLoadingTime={1000}>
-        <Route path="/" element={<Coming/>} />
-        <Route path="/test" element={<Test/>} loading  />
+        <Route path="/" element={<Coming/>} loading/>
+        <Route path="/php-laravel-react-js" element={<Test/>} loading  />
      </Routes>
     </div>
   );

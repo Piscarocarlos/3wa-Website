@@ -18,8 +18,8 @@ export default function Coming() {
     loadingContext.done();
   };
 
-  useEffect(()=>{
-    var typed = new Typed('.title', {
+   useEffect( ()=>{
+    let typed = new Typed('.title', {
       strings: ['We Are Making <br/> Something Specials'],
       typeSpeed: 100,
       loop: true,
@@ -27,7 +27,7 @@ export default function Coming() {
       showCursor: false,
     });
 
-  }, [])
+  },)
 
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -69,24 +69,26 @@ export default function Coming() {
             <div className="col-xl-10 offset-xl-1">
               <div className="content text-center">
                 <div className="logo">
-                  <Link to="/test">
+                  <Link to="/">
                     <img src={LogoColor} alt="" className="logo-size" />
                   </Link>
                   <h1 className="title"></h1>
                   <Countdown date={Date.now() + 2592000*1000} renderer={renderer}></Countdown>
                   <p className="description">
-                    <span className="fw-bold">3W Academy</span> est un 
-                    <span className="fw-bold">bootcamp</span> 
+                    <span className="fw-bold">3W Academy</span> est un  
+                    <span className="fw-bold"> bootcamp </span>  
                     accélérateur de carrières dans les métiers du <span className="fw-bold">développement WEB et Mobile</span> à travers des formations courtes, intensives et <span className="fw-bold">90% pratiques</span>.
                     </p>
                     <p className="description">
                     Au Maroc, +450 lauréats ont réussi cette formation et 87% décrochent un job ou à lancent leurs propres projets moins de 6 mois après leur certification, pourquoi pas toi ?
                     </p>
                     <div className="newsletter-style-6">
-                        <form className="newsletter-form-style-2" action="#">
+                        {/* <form className="newsletter-form-style-2" action="#"> */}
                             {/* <input type="email" placeholder="Enter your mail address"/> */}
-                            <button className="edu-btn w-75">Rejoindre une formation <i className="icon-arrow-right-line-right"></i></button>
-                        </form>
+                            <Link to="/php-laravel-react-js">                            
+                              <button className="edu-btn w-75">Rejoindre une formation <i className="icon-arrow-right-line-right"></i></button>
+                            </Link>
+                        {/* </form> */}
                     </div>
                 </div>
               </div>

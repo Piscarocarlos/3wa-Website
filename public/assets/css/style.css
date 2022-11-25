@@ -5112,7 +5112,7 @@ textarea:-ms-input-placeholder {
 
 /* Breadcrumb  */
 .edu-breadcrumb-area {
-  background-image: url(../images/bg/breadcrumb-bg.jpg);
+  background-image: url("../images/bg/breadcrumb-bg.jpg");
  }
   .edu-breadcrumb-area .shape-image {
     position: absolute;
