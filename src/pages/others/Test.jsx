@@ -8,11 +8,6 @@ import { Link } from 'react-router-dom';
 
 export default function Test() {
 
-    const steps = [
-        { name: 'StepOne', component: <StepOne /> },
-        { name: 'StepTwo', component: <StepTwo /> },
-    ];
-
     return (
         <div className="main-wrapper">
             <Breadcumb pageName="PHP-JS (Laravel + React JS)" />
