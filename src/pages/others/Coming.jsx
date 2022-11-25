@@ -20,7 +20,7 @@ export default function Coming() {
 
    useEffect( ()=>{
     let typed = new Typed('.title', {
-      strings: ['We Are Making <br/> Something Specials'],
+      strings: ['We Are Making <br/> Something Special'],
       typeSpeed: 100,
       loop: true,
       startDelay: 100,

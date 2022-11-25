@@ -40,8 +40,8 @@ export default function Test() {
                                     </div>
                                     <div className="content">
                                         <h6 className="title">Constitution du dossier </h6>
-                                        <p><a href="https://example.com/" target="_blank">www.example.com</a></p>
-                                        <p><a href="https://themeforest.net/" target="_blank">www.theme.net</a></p>
+                                        <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
+                                        <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
                                     </div>
                                 </div>
                             </div>
@@ -54,8 +54,8 @@ export default function Test() {
                                     </div>
                                     <div className="content">
                                         <h6 className="title">Etude de dossier</h6>
-                                        <p><a href="tel:+2763(388)2930">+2763 (388) 2930</a></p>
-                                        <p><a href="tel:+4875(356)2568">+4875 (356) 2568</a></p>
+                                        <p><a href="tel:+2763(388)2930">+212 665-279-092</a></p>
+                                        <p><a href="tel:+4875(356)2568">+212 665-279-092</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -68,8 +68,8 @@ export default function Test() {
                                     </div>
                                     <div className="content">
                                         <h6 className="title">Mise à Niveau</h6>
-                                        <p><a href="mailto:eduvibe@example.com" target="_blank">eduvibe@example.com</a></p>
-                                        <p><a href="mailto:contact@eduvibe.com" target="_blank">contact@eduvibe.com</a></p>
+                                        <p><Link href="#" target="_blank">learn@3wa.io</Link></p>
+                                        <p><Link href="#m" target="_blank">digital@3wa.io</Link></p>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ export default function Test() {
                                     </div>
                                     <div className="content">
                                         <h6 className="title">Débuter la forrmation</h6>
-                                        <p>486 Normana Avenue Morningtide, 4223</p>
+                                        <p>Casablanca, Rabat Maroc</p>
                                     </div>
                                 </div>
                             </div>
