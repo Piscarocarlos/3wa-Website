@@ -12,81 +12,81 @@ export default function Test() {
         <div className="main-wrapper">
             <Breadcumb pageName="PHP-JS (Laravel + React JS)" />
             <div className="container">
-            <div className="row mt-5">
-                        <div className="col-md-12">
-                            <div className="d-flex justify-content-between">
-                                <Link to="/">
+                <div className="row mt-5">
+                    <div className="col-md-12">
+                        <div className="d-flex justify-content-between">
+                            <Link to="/">
                                 <button className="rn-btn edu-btn w-100" name="submit" type="submit">
-                                <i className="ri-arrow-left-line me-3"></i><span>Page d'accueil</span>
+                                    <i className="ri-arrow-left-line me-3"></i><span>Page d'accueil</span>
                                 </button>
-                                </Link>
-                            </div>
+                            </Link>
                         </div>
                     </div>
+                </div>
             </div>
             <div className="edu-contact-us-area eduvibe-contact-us edu-section-gap bg-color-white">
                 <div className="container eduvibe-animated-shape">
-                    
+
 
                     <Offer />
                     <div className="row g-5 mt--20">
                         <div className="col-lg-6">
                             <div className="row g-5">
-                            <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
-                            <div className="contact-address-card-1 website">
-                                <div className="inner">
-                                    <div className="icon">
-                                        <i className="ri-global-line"></i>
-                                    </div>
-                                    <div className="content">
-                                        <h6 className="title">Constitution du dossier </h6>
-                                        <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
-                                        <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
-                            <div className="contact-address-card-1 phone">
-                                <div className="inner">
-                                    <div className="icon">
-                                        <i className="icon-Headphone"></i>
-                                    </div>
-                                    <div className="content">
-                                        <h6 className="title">Etude de dossier</h6>
-                                        <p><a href="tel:+2763(388)2930">+212 665-279-092</a></p>
-                                        <p><a href="tel:+4875(356)2568">+212 665-279-092</a></p>
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
+                                    <div className="contact-address-card-1 website">
+                                        <div className="inner">
+                                            <div className="icon">
+                                                <i className="ri-global-line"></i>
+                                            </div>
+                                            <div className="content">
+                                                <h6 className="title">Constitution du dossier </h6>
+                                                <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
+                                                <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
-                            <div className="contact-address-card-1 email">
-                                <div className="inner">
-                                    <div className="icon">
-                                        <i className="icon-mail-open-line"></i>
-                                    </div>
-                                    <div className="content">
-                                        <h6 className="title">Mise à Niveau</h6>
-                                        <p><Link href="#" target="_blank">learn@3wa.io</Link></p>
-                                        <p><Link href="#m" target="_blank">digital@3wa.io</Link></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
-                            <div className="contact-address-card-1 location">
-                                <div className="inner">
-                                    <div className="icon">
-                                        <i className="icon-map-pin-line"></i>
-                                    </div>
-                                    <div className="content">
-                                        <h6 className="title">Débuter la forrmation</h6>
-                                        <p>Casablanca, Rabat Maroc</p>
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
+                                    <div className="contact-address-card-1 phone">
+                                        <div className="inner">
+                                            <div className="icon">
+                                                <i className="icon-Headphone"></i>
+                                            </div>
+                                            <div className="content">
+                                                <h6 className="title">Etude de dossier</h6>
+                                                <p><a href="tel:+2763(388)2930">+212 665-279-092</a></p>
+                                                <p><a href="tel:+4875(356)2568">+212 665-279-092</a></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
+                                    <div className="contact-address-card-1 email">
+                                        <div className="inner">
+                                            <div className="icon">
+                                                <i className="icon-mail-open-line"></i>
+                                            </div>
+                                            <div className="content">
+                                                <h6 className="title">Mise à Niveau</h6>
+                                                <p><Link href="#" target="_blank">learn@3wa.io</Link></p>
+                                                <p><Link href="#m" target="_blank">digital@3wa.io</Link></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
+                                    <div className="contact-address-card-1 location">
+                                        <div className="inner">
+                                            <div className="icon">
+                                                <i className="icon-map-pin-line"></i>
+                                            </div>
+                                            <div className="content">
+                                                <h6 className="title">Débuter la forrmation</h6>
+                                                <p>Casablanca, Rabat Maroc</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -121,7 +121,7 @@ export default function Test() {
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
-                                    <button className="rn-btn edu-btn w-100" name="submit" type="submit">
+                                    <button className="rn-btn edu-btn w-100" name="submit" type="button">
                                         <span>Réserver ma place pour la prochaine session</span><i className="icon-arrow-right-line-right"></i>
                                     </button>
                                 </div>
