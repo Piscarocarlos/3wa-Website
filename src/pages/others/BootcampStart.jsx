@@ -41,7 +41,6 @@ export default function BootcampStart() {
                                             <div className="content">
                                                 <h6 className="title">Constitution du dossier </h6>
                                                 <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
-                                                <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
                                             </div>
                                         </div>
                                     </div>
@@ -54,8 +53,7 @@ export default function BootcampStart() {
                                             </div>
                                             <div className="content">
                                                 <h6 className="title">Etude de dossier</h6>
-                                                <p><a href="tel:+2763(388)2930">+212 665-279-092</a></p>
-                                                <p><a href="tel:+4875(356)2568">+212 665-279-092</a></p>
+                                                <p><a href="tel:+2763(388)2930">+212 707-143777</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -68,8 +66,7 @@ export default function BootcampStart() {
                                             </div>
                                             <div className="content">
                                                 <h6 className="title">Mise à Niveau</h6>
-                                                <p><Link href="#" target="_blank">learn@3wa.io</Link></p>
-                                                <p><Link href="#m" target="_blank">digital@3wa.io</Link></p>
+                                                <p><Link href="#" target="_blank">Hello@3wa.io</Link></p>
                                             </div>
                                         </div>
                                     </div>
@@ -92,41 +89,7 @@ export default function BootcampStart() {
                         
                         <div className="col-lg-6">
                             {/* Zoho form added */}
-                            <form className="rnt-contact-form rwt-dynamic-form row">
-                                <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <input name="contact-name" id="contact-name" type="text" className="form-control form-control-lg" placeholder="Name*" />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <input type="email" className="form-control form-control-lg" id="contact-email" name="contact-email" placeholder="Email*" />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <input type="text" className="form-control form-control-lg" name="contact-phone" id="contact-phone" placeholder="Phone" />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <input type="text" className="form-control form-control-lg" id="subject" name="subject" placeholder="Subject" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <textarea className="form-control" name="contact-message" id="contact-message" placeholder="Your Message"></textarea>
-                                    </div>
-                                </div>
-                                <div className="col-lg-12">
-                                    <button className="rn-btn edu-btn w-100" name="submit" type="button">
-                                        <span>Réserver ma place pour la prochaine session</span><i className="icon-arrow-right-line-right"></i>
-                                    </button>
-                                </div>
-                            </form>
+                            <iframe  width="100%" height="550" src='https://forms.zohopublic.com/digital29/form/Signup/formperma/KsrPL0xswdYf0pGZq6EcZzCAqTj9kgnM-MbEdDo_j-Y'></iframe>
                         </div>
                     </div>
 
