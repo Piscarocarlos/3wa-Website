@@ -16,7 +16,7 @@ export default function Offer() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="section-title text-center" >
-                                <span className="pre-title">Bootcamp Développeur Web Full-Stack</span>
+                                <span className="pre-title">Bootcamp START : Développeur web Junior</span>
                                 <h3 className="title">Une opportunité unique à saisir <br />  maintenant !</h3>
                             </div>
                         </div>

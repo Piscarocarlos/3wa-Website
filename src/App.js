@@ -1,8 +1,8 @@
 
 import { Route, Routes } from 'react-router-loading';
 import Coming from './pages/others/Coming';
-import Test from './pages/others/Test';
 import { topbar } from "react-router-loading";
+import BootcampStart from './pages/others/BootcampStart';
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
 
      <Routes maxLoadingTime={1000}>
         <Route path="/" element={<Coming/>} loading/>
-        <Route path="/php-laravel-react-js" element={<Test/>} loading  />
+        <Route path="/bootcamp-start" element={<BootcampStart/>} loading  />
      </Routes>
     </div>
   );

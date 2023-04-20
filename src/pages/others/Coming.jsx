@@ -26,7 +26,7 @@ export default function Coming() {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("February 28,2023 ").getTime();
+    const countDownDate = new Date("May 15,2023 ").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -109,7 +109,7 @@ export default function Coming() {
                     <div className="newsletter-style-6">
                       {/* <form className="newsletter-form-style-2" action="#"> */}
                       {/* <input type="email" placeholder="Enter your mail address"/> */}
-                      <Link to="/php-laravel-react-js">
+                      <Link to="/bootcamp-start">
                         <button className="edu-btn w-75">Rejoindre une formation <i className="icon-arrow-right-line-right"></i></button>
                       </Link>
                       {/* </form> */}

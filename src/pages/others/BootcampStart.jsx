@@ -6,11 +6,11 @@ import Breadcumb from './Breadcumb';
 import Offer from './Offer';
 import { Link } from 'react-router-dom';
 
-export default function Test() {
+export default function BootcampStart() {
 
     return (
         <div className="main-wrapper">
-            <Breadcumb pageName="PHP-JS (Laravel + React JS)" />
+            <Breadcumb pageName="Bootcamp START" />
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-md-12">
@@ -27,8 +27,8 @@ export default function Test() {
             <div className="edu-contact-us-area eduvibe-contact-us edu-section-gap bg-color-white">
                 <div className="container eduvibe-animated-shape">
 
-
                     <Offer />
+
                     <div className="row g-5 mt--20">
                         <div className="col-lg-6">
                             <div className="row g-5">
@@ -89,8 +89,9 @@ export default function Test() {
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div className="col-lg-6">
+                            {/* Zoho form added */}
                             <form className="rnt-contact-form rwt-dynamic-form row">
                                 <div className="col-lg-12">
                                     <div className="form-group">
