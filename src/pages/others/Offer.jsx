@@ -32,8 +32,8 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Cours à distance</a></h6>
-                                        <p className="description">Suivez nos cours en ligne avec des coachs qualifiés et des outils adéquats.</p>
+                                        <h6 className="title"><a href="#">+35 projets lors de votre parcours d'apprentissage.</a></h6>
+                                        <p className="description">Transformez vos compétences. Lancez-vous dans une aventure de projets concrets.</p>
                                     </div>
                                 </div>
                             </div>
@@ -48,8 +48,9 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Coachs qualifiés</a></h6>
-                                        <p className="description">Nos coachs sont qualifiés et ont déjà des expériences en entreprise.</p>
+                                        <h6 className="title"><a href="#">Coaching par des professionnels </a></h6>
+                                        <p className="description">Efficacité en matière d'éducation. Apprentissage guidé par un instructeur.
+                                            Maximisez votre potentiel. Minimisez le temps perdu.</p>
                                     </div>
                                 </div>
                             </div>
@@ -64,8 +65,8 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Certification</a></h6>
-                                        <p className="description">Obtenez votre certicication après avoir valider les modules et votre projet.</p>
+                                        <h6 className="title"><a href="#">Certification par niveau</a></h6>
+                                        <p className="description">Obtenez votre certicication après avoir valider les modules et votre projet. Cette certification est donnée avec la compétence</p>
                                     </div>
                                 </div>
                             </div>
@@ -80,8 +81,9 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Guide de carrière</a></h6>
-                                        <p className="description">Vous recevez un accompagnement avec insertion pour votre carrière.</p>
+                                        <h6 className="title"><a href="#">Guide de carrière professionnelle </a></h6>
+                                        <p className="description">Atteignez vos objectifs, une étape à la fois.
+                                            Donnez du pouvoir aux individus grâce à un coaching de carrière personnalisé.</p>
                                     </div>
                                 </div>
                             </div>

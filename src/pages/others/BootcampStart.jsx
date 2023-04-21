@@ -39,7 +39,7 @@ export default function BootcampStart() {
                                                 <i className="ri-global-line"></i>
                                             </div>
                                             <div className="content">
-                                                <h6 className="title">Constitution du dossier </h6>
+                                                <h6 className="title">Candidature </h6>
                                                 <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
                                             </div>
                                         </div>
@@ -52,7 +52,7 @@ export default function BootcampStart() {
                                                 <i className="icon-Headphone"></i>
                                             </div>
                                             <div className="content">
-                                                <h6 className="title">Etude de dossier</h6>
+                                                <h6 className="title">Contact</h6>
                                                 <p><a href="tel:+2763(388)2930">+212 707-143777</a></p>
                                             </div>
                                         </div>
@@ -65,7 +65,7 @@ export default function BootcampStart() {
                                                 <i className="icon-mail-open-line"></i>
                                             </div>
                                             <div className="content">
-                                                <h6 className="title">Mise à Niveau</h6>
+                                                <h6 className="title">Infos </h6>
                                                 <p><Link href="#" target="_blank">Hello@3wa.io</Link></p>
                                             </div>
                                         </div>
@@ -78,7 +78,7 @@ export default function BootcampStart() {
                                                 <i className="icon-map-pin-line"></i>
                                             </div>
                                             <div className="content">
-                                                <h6 className="title">Débuter la forrmation</h6>
+                                                <h6 className="title">Campus</h6>
                                                 <p>Casablanca, Rabat Maroc</p>
                                             </div>
                                         </div>
