@@ -104,7 +104,7 @@ export default function Coming() {
                       accélérateur de carrières dans les métiers du <span className="fw-bold">développement WEB et Mobile</span> à travers des formations courtes, intensives et <span className="fw-bold">90% pratiques</span>.
                     </p>
                     <p className="description">
-                      Au Maroc, +450 lauréats ont réussi cette formation et 87% décrochent un job ou à lancent leurs propres projets moins de 6 mois après leur certification, pourquoi pas toi ?
+                      Au Maroc, +600 lauréats ont réussi cette formation et 87% décrochent un job ou à lancent leurs propres projets moins de 6 mois après leur certification, pourquoi pas toi ?
                     </p>
                     <div className="newsletter-style-6">
                       {/* <form className="newsletter-form-style-2" action="#"> */}

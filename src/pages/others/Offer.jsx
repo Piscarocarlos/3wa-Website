@@ -17,7 +17,7 @@ export default function Offer() {
                         <div className="col-lg-12">
                             <div className="section-title text-center" >
                                 <span className="pre-title">Bootcamp START : Développeur web Junior</span>
-                                <h3 className="title">Une opportunité unique à saisir <br />  maintenant !</h3>
+                                <h3 className="title">Deviens développeur web en 4 mois à temps plein ou 8 mois à temps partiel, sans pré-requis.</h3>
                             </div>
                         </div>
                     </div>
@@ -32,8 +32,8 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Cours à distance</a></h6>
-                                        <p className="description">Suivez nos cours en ligne avec des coachs qualifiés et des outils adéquats.</p>
+                                        <h6 className="title"><a href="#">Formation 90% Pratique</a></h6>
+                                        <p className="description">Apprenez à coder en réalisant des projets, en mode “real-life“. </p>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Certification</a></h6>
+                                        <h6 className="title"><a href="#">Validé</a></h6>
                                         <p className="description">Obtenez votre certicication après avoir valider les modules et votre projet.</p>
                                     </div>
                                 </div>
@@ -80,8 +80,8 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Guide de carrière</a></h6>
-                                        <p className="description">Vous recevez un accompagnement avec insertion pour votre carrière.</p>
+                                        <h6 className="title"><a href="#">Career Coaching</a></h6>
+                                        <p className="description">Vous serez accompagné par nos coachs de carrière pour réussir votre insertion professionnelle.</p>
                                     </div>
                                 </div>
                             </div>

@@ -78,18 +78,72 @@ export default function BootcampStart() {
                                                 <i className="icon-map-pin-line"></i>
                                             </div>
                                             <div className="content">
-                                                <h6 className="title">Débuter la forrmation</h6>
-                                                <p>Casablanca, Rabat Maroc</p>
+                                                <h6 className="title">Campus</h6>
+                                                <p>Casablanca, Rabat et en ligne.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        </div>
                         
                         <div className="col-lg-6">
                             {/* Zoho form added */}
-                            <iframe  width="100%" height="550" src='https://forms.zohopublic.com/digital29/form/Signup/formperma/KsrPL0xswdYf0pGZq6EcZzCAqTj9kgnM-MbEdDo_j-Y'></iframe>
+                            <div class="form">
+                                <form action='https://forms.zohopublic.com/digital29/form/Signup/formperma/lBbcxi_tt_j0ydwjo7Iaga2OjpmN9a05Sj4iiC2HQrM/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                                    <input type="hidden" name="zf_referrer_name" value=""/>
+                                    <input type="hidden" name="zf_redirect_url" value=""/>
+                                    <input type="hidden" name="zc_gad" value=""/>
+                                    <h2>Formulaire de prise de contact</h2>
+                                    <p>Bonjour HERO,
+                                    Merci pour ton intérêt.
+                                    Nous avons hâte de discuter avec toi ! 
+                                    Les informations que tu partageras avec nous seront traités pour pouvoir rentrer en contact avec toi, ainsi t'aider à faire le meilleur choix de carrière.</p>
+                                    <br/>
+                                    <label> Nom et prénom 
+                                        <em>*</em>
+                                    </label>
+                                    <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" required/>
+                                    <br/>
+                                    <br/>
+                                    <label> Adresse email 
+                                        <em>*</em>
+                                    </label>
+                                    <input type="text" maxlength="255" name="Email" value="" fieldType="9" placeholder="" required/>
+                                    <br/>
+                                    <br/>
+                                    <label> Numéro de télephone 
+                                        <em>*</em>
+                                    </label>
+                                    <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled="false" maxlength="20" value="" fieldType="11" id="international_PhoneNumber_countrycode" placeholder="" required/>
+                                    <br/>
+                                    <br/>
+                                    <label>Horaire:
+                                        <em>*</em>
+                                    </label>
+                                    <select id="horaire" name="horaire" required>
+                                      <option value="full">Temps plein</option>
+                                      <option value="part">temps partiel</option>
+                                      <option value="online">en ligne</option>
+                                    </select>
+                                    <br/>
+                                    <br/>        
+                                    <label>
+                                    Termes et conditions
+                                        <em>*</em>
+                                    </label>
+                                    <div class="tempContDiv " elemid="tempcontdiv">
+                                        <div class="termsContainer">
+                                            <label>
+                                                <input class="checkBoxType" name="TermsConditions" type="checkbox" required/>J'accepte les termes et conditions.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <button type="submit">Validé</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
 
@@ -109,7 +163,7 @@ export default function BootcampStart() {
 
                 </div>
             </div>
-        </div>
+        
     )
 }
 
