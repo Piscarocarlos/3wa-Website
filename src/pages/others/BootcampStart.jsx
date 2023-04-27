@@ -86,40 +86,37 @@ export default function BootcampStart() {
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        
                         <div className="col-lg-6">
                             {/* Zoho form added */}
-                            <div class="form">
+                            <div id="form">
                                 <form action='https://forms.zohopublic.com/digital29/form/Signup/formperma/lBbcxi_tt_j0ydwjo7Iaga2OjpmN9a05Sj4iiC2HQrM/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
                                     <input type="hidden" name="zf_referrer_name" value=""/>
                                     <input type="hidden" name="zf_redirect_url" value=""/>
                                     <input type="hidden" name="zc_gad" value=""/>
-                                    <h2>Formulaire de prise de contact</h2>
-                                    <p>Bonjour HERO,
+                                    <h2 id="h2">Formulaire de prise de contact</h2>
+                                    <p id="para">Bonjour HERO,
                                     Merci pour ton intérêt.
                                     Nous avons hâte de discuter avec toi ! 
                                     Les informations que tu partageras avec nous seront traités pour pouvoir rentrer en contact avec toi, ainsi t'aider à faire le meilleur choix de carrière.</p>
-                                    <br/>
-                                    <label> Nom et prénom 
+                                    <label id="label"> Nom et prénom 
                                         <em>*</em>
                                     </label>
                                     <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" required/>
                                     <br/>
                                     <br/>
-                                    <label> Adresse email 
+                                    <label id="label"> Adresse email 
                                         <em>*</em>
                                     </label>
                                     <input type="text" maxlength="255" name="Email" value="" fieldType="9" placeholder="" required/>
                                     <br/>
                                     <br/>
-                                    <label> Numéro de télephone 
+                                    <label id="label"> Numéro de télephone 
                                         <em>*</em>
                                     </label>
                                     <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled="false" maxlength="20" value="" fieldType="11" id="international_PhoneNumber_countrycode" placeholder="" required/>
                                     <br/>
                                     <br/>
-                                    <label>Horaire:
+                                    <label id="label">Horaire:
                                         <em>*</em>
                                     </label>
                                     <select id="horaire" name="horaire" required>
@@ -129,23 +126,26 @@ export default function BootcampStart() {
                                     </select>
                                     <br/>
                                     <br/>        
-                                    <label>
+                                    <label id="label">
                                     Termes et conditions
                                         <em>*</em>
                                     </label>
                                     <div class="tempContDiv " elemid="tempcontdiv">
                                         <div class="termsContainer">
-                                            <label>
-                                                <input class="checkBoxType" name="TermsConditions" type="checkbox" required/>J'accepte les termes et conditions.
+                                            <label id="label">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"/> J'accepte les termes et conditions.
                                             </label>
                                         </div>
                                     </div>
                                     <br/>
-                                    <button type="submit">Validé</button>
+                                    <button id="btn" type="submit">Validé</button>
                                 </form>
                             </div>
                         </div>
                     </div>
+                        
+                        
+                </div>
 
                     <div className="shape-dot-wrapper shape-wrapper d-xl-block d-none">
                         <div className="shape-image scene shape-image-1">
