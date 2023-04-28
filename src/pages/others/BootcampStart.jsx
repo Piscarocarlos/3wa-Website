@@ -86,84 +86,81 @@ export default function BootcampStart() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 formu">
                             {/* Zoho form added */}
-                            <div id="form">
+                            <div id="formul">
                                 <form action='https://forms.zohopublic.com/digital29/form/Signup/formperma/lBbcxi_tt_j0ydwjo7Iaga2OjpmN9a05Sj4iiC2HQrM/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
-                                    <input type="hidden" name="zf_referrer_name" value=""/>
-                                    <input type="hidden" name="zf_redirect_url" value=""/>
-                                    <input type="hidden" name="zc_gad" value=""/>
+                                    <input type="hidden" name="zf_referrer_name" value="" />
+                                    <input type="hidden" name="zf_redirect_url" value="" />
+                                    <input type="hidden" name="zc_gad" value="" />
                                     <h2 id="h2">Formulaire de prise de contact</h2>
                                     <p id="para">Bonjour HERO,
-                                    Merci pour ton intérêt.
-                                    Nous avons hâte de discuter avec toi ! 
-                                    Les informations que tu partageras avec nous seront traités pour pouvoir rentrer en contact avec toi, ainsi t'aider à faire le meilleur choix de carrière.</p>
-                                    <label id="label"> Nom et prénom 
-                                        <em>*</em>
-                                    </label>
-                                    <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" required/>
-                                    <br/>
-                                    <br/>
-                                    <label id="label"> Adresse email 
-                                        <em>*</em>
-                                    </label>
-                                    <input type="text" maxlength="255" name="Email" value="" fieldType="9" placeholder="" required/>
-                                    <br/>
-                                    <br/>
-                                    <label id="label"> Numéro de télephone 
-                                        <em>*</em>
-                                    </label>
-                                    <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled="false" maxlength="20" value="" fieldType="11" id="international_PhoneNumber_countrycode" placeholder="" required/>
-                                    <br/>
-                                    <br/>
-                                    <label id="label">Horaire:
+                                        Merci pour ton intérêt.
+                                        Nous avons hâte de discuter avec toi !
+                                        Les informations que tu partageras avec nous seront traités pour pouvoir rentrer en contact avec toi, ainsi t'aider à faire le meilleur choix de carrière, nos Advisors sont là pour vous aider à décider.</p>
+                                    <div className="form-group">
+                                        <label id="label"> Nom et prénom:
+                                            <em>*</em>
+                                        </label>
+                                        <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" required />
+                                    </div>
+
+                                    <div className="form-group">
+                                        <label id="label"> Adresse email:
+                                            <em>*</em>
+                                        </label>
+                                        <input type="text" maxlength="255" name="Email" value="" fieldType="9" placeholder="" required />
+                                    </div>
+                                    <div className="form-group">
+                                        <label id="label"> Numéro de télephone:
+                                            <em>*</em>
+                                        </label>
+                                        <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled="false" maxlength="20" value="" fieldType="11" id="international_PhoneNumber_countrycode" placeholder="" required />
+                                    </div>
+                                    <div className="form-group">
+                                        <label id="label">Horaire:
                                         <em>*</em>
                                     </label>
                                     <select id="horaire" name="horaire" required>
-                                      <option value="full">Temps plein</option>
-                                      <option value="part">temps partiel</option>
-                                      <option value="online">en ligne</option>
+                                        <option value="full">Temps plein</option>
+                                        <option value="part">temps partiel</option>
+                                        <option value="online">en ligne</option>
                                     </select>
-                                    <br/>
-                                    <br/>        
-                                    <label id="label">
-                                    Termes et conditions
-                                        <em>*</em>
-                                    </label>
+                                    </div>
+                                    
+
                                     <div class="tempContDiv " elemid="tempcontdiv">
                                         <div class="termsContainer">
-                                            <label id="label">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"/> J'accepte les termes et conditions.
-                                            </label>
+                                            <input className='check' type="checkbox" id="accept" />
+                                            <label for="accept">J'accepte les termes et conditions.</label>
                                         </div>
                                     </div>
-                                    <br/>
                                     <button id="btn" type="submit">Validé</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                        
-                        
+
+
                 </div>
 
-                    <div className="shape-dot-wrapper shape-wrapper d-xl-block d-none">
-                        <div className="shape-image scene shape-image-1">
-                            <span data-depth="-2.2">
-                                <img src={Shape1} alt="Shape Thumb" />
-                            </span>
-                        </div>
-                        <div className="shape-image shape-image-2">
-                            <img src={Shape2} alt="Shape Thumb" />
-                        </div>
-                        <div className="shape-image shape-image-3">
-                            <img src={Shape3} alt="Shape Thumb" />
-                        </div>
+                <div className="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                    <div className="shape-image scene shape-image-1">
+                        <span data-depth="-2.2">
+                            <img src={Shape1} alt="Shape Thumb" />
+                        </span>
                     </div>
-
+                    <div className="shape-image shape-image-2">
+                        <img src={Shape2} alt="Shape Thumb" />
+                    </div>
+                    <div className="shape-image shape-image-3">
+                        <img src={Shape3} alt="Shape Thumb" />
+                    </div>
                 </div>
+
             </div>
-        
+        </div>
+
     )
 }
 

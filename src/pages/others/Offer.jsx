@@ -48,9 +48,8 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Coaching par des professionnels </a></h6>
-                                        <p className="description">Efficacité en matière d'éducation. Apprentissage guidé par un instructeur.
-                                            Maximisez votre potentiel. Minimisez le temps perdu.</p>
+                                        <h6 className="title"><a href="#">Instructor-led = no time to waste</a></h6>
+                                        <p className="description">Efficacité en matière d'éducation, Apprentissage guidé par un instructeur, Maximisez votre potentiel, Minimisez le temps perdu.</p>
                                     </div>
                                 </div>
                             </div>
