@@ -64,7 +64,7 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Validé</a></h6>
+                                        <h6 className="title"><a href="#">Validé</a></h6><br></br>
                                         <p className="description">Obtenez votre certicication après avoir valider les modules et votre projet.</p>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@ export default function Offer() {
                                         <Icon />
                                     </div>
                                     <div className="content">
-                                        <h6 className="title"><a href="#">Career Coaching</a></h6>
+                                        <h6 className="title"><a href="#">Career Coaching</a></h6><br></br>
                                         <p className="description">Vous serez accompagné par nos coachs de carrière pour réussir votre insertion professionnelle.</p>
                                     </div>
                                 </div>

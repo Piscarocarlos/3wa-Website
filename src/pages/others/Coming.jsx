@@ -110,7 +110,7 @@ export default function Coming() {
                       {/* <form className="newsletter-form-style-2" action="#"> */}
                       {/* <input type="email" placeholder="Enter your mail address"/> */}
                       <Link to="/bootcamp-start">
-                        <button className="edu-btn w-75 bg-fc5b05">Rejoindre une formation <i className="icon-arrow-right-line-right"></i></button>
+                        <button className="edu-btn w-75 bg-fc5b05">Rejoindre nos formation <i className="icon-arrow-right-line-right"></i></button>
                       </Link>
                       {/* </form> */}
                     </div>

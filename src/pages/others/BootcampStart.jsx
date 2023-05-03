@@ -28,68 +28,63 @@ export default function BootcampStart() {
                 <div className="container eduvibe-animated-shape">
 
                     <Offer />
-
-                    <div className="row g-5 mt--20">
-                        <div className="col-lg-6">
-                            <div className="row g-5">
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
-                                    <div className="contact-address-card-1 website">
-                                        <div className="inner">
-                                            <div className="icon">
-                                                <i className="ri-global-line"></i>
-                                            </div>
-                                            <div className="content">
-                                                <h6 className="title">Candidature </h6>
-                                                <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
-                                            </div>
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="row">
+                                <div className="contact-address-card-1 website col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <div className="inner">
+                                        <div className="icon">
+                                            <i className="ri-global-line"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h6 className="title">Candidature </h6>
+                                            <p><Link to="#" target="_blank">www.3wa.ma</Link></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
-                                    <div className="contact-address-card-1 phone">
-                                        <div className="inner">
-                                            <div className="icon">
-                                                <i className="icon-Headphone"></i>
-                                            </div>
-                                            <div className="content">
-                                                <h6 className="title">Contact</h6>
-                                                <p><a href="tel:+2763(388)2930">+212 707-143777</a></p>
-                                            </div>
+                                <div className="contact-address-card-1 phone col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <div className="inner">
+                                        <div className="icon">
+                                            <i className="icon-Headphone"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h6 className="title">Contact</h6>
+                                            <p><a href="tel:+2763(388)2930">+212 707-143777</a></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
-                                    <div className="contact-address-card-1 email">
-                                        <div className="inner">
-                                            <div className="icon">
-                                                <i className="icon-mail-open-line"></i>
-                                            </div>
-                                            <div className="content">
-                                                <h6 className="title">Infos </h6>
-                                                <p><Link href="#" target="_blank">Hello@3wa.io</Link></p>
-                                            </div>
+                                <div className="contact-address-card-1 email col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <div className="inner">
+                                        <div className="icon">
+                                            <i className="icon-mail-open-line"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h6 className="title">Infos </h6>
+                                            <p><Link href="#" target="_blank">Hello@3wa.io</Link></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
-                                    <div className="contact-address-card-1 location">
-                                        <div className="inner">
-                                            <div className="icon">
-                                                <i className="icon-map-pin-line"></i>
-                                            </div>
-                                            <div className="content">
-                                                <h6 className="title">Campus</h6>
-                                                <p>Casablanca, Rabat et en ligne.</p>
-                                            </div>
+                                <div className="contact-address-card-1 location col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <div className="inner">
+                                        <div className="icon">
+                                            <i className="icon-map-pin-line"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h6 className="title">Campus</h6>
+                                            <p>Casablanca, Rabat et en ligne.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 formu">
+                    </div>
+
+                    <div className="row mt--50">
+                        
+                        <div className="col-lg-12 formu">
                             {/* Zoho form added */}
                             <div id="formul">
-                                <form action='https://forms.zohopublic.com/digital29/form/Signup/formperma/lBbcxi_tt_j0ydwjo7Iaga2OjpmN9a05Sj4iiC2HQrM/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                                <form action='https://forms.zohopublic.com/digital29/form/Condidature/formperma/IyN0pLL11VNAJQAupqDO-ubF0P7VMeBVIMPzzVNPo-E/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
                                     <input type="hidden" name="zf_referrer_name" value="" />
                                     <input type="hidden" name="zf_redirect_url" value="" />
                                     <input type="hidden" name="zc_gad" value="" />
@@ -98,37 +93,143 @@ export default function BootcampStart() {
                                         Merci pour ton intérêt.
                                         Nous avons hâte de discuter avec toi !
                                         Les informations que tu partageras avec nous seront traités pour pouvoir rentrer en contact avec toi, ainsi t'aider à faire le meilleur choix de carrière, nos Advisors sont là pour vous aider à décider.</p>
+                                    {/* Nom complet */}
                                     <div className="form-group">
-                                        <label id="label"> Nom et prénom:
+                                        <label id="label"> Nom et prénom :
                                             <em>*</em>
                                         </label>
                                         <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" required />
                                     </div>
-
+                                    {/* Age */}
                                     <div className="form-group">
-                                        <label id="label"> Adresse email:
+                                        <label id="label"> Age :
+                                            <em>*</em>
+                                        </label>
+                                        <input type="text" name="Number" value="" maxlength="18" placeholder="" />
+                                    </div>
+                                    {/* Email */}
+                                    <div className="form-group">
+                                        <label id="label"> Adresse email :
                                             <em>*</em>
                                         </label>
                                         <input type="text" maxlength="255" name="Email" value="" fieldType="9" placeholder="" required />
                                     </div>
+                                    {/* Tel */}
                                     <div className="form-group">
-                                        <label id="label"> Numéro de télephone:
+                                        <label id="label"> Numéro de télephone :
                                             <em>*</em>
                                         </label>
                                         <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled="false" maxlength="20" value="" fieldType="11" id="international_PhoneNumber_countrycode" placeholder="" required />
                                     </div>
+                                    {/* Situation Actuelle */}                                    
                                     <div className="form-group">
-                                        <label id="label">Horaire:
+                                        <label id="label">Votre situation actuelle :
                                         <em>*</em>
                                     </label>
                                     <select id="horaire" name="horaire" required>
-                                        <option value="full">Temps plein</option>
-                                        <option value="part">temps partiel</option>
-                                        <option value="online">en ligne</option>
+                                        <option value="full">Employé à temps plein</option>
+                                        <option value="recherche">En recherche d'emploi depuis plus d'un an</option>
+                                        <option value="etudiant">Etudiant</option>
+                                        <option value="full">Fraichement diplômé, en recherche d'emploi (&lt; 1 an)</option>
+                                        <option value="Freelancer">Freelancer</option>
                                     </select>
                                     </div>
-                                    
-
+                                    {/* Niveau d'etude */}                                    
+                                    <div className="form-group">
+                                        <label id="label">Votre niveu d'étude :
+                                        <em>*</em>
+                                    </label>
+                                    <select id="horaire" name="horaire" required>
+                                        <option value="sans bac">Sans Bac</option>
+                                        <option value="bachelier">Bachelier</option>
+                                        <option value="bac+2">Bac+2</option>
+                                        <option value="bac+3/4">Bac+3/4</option>
+                                        <option value="bac+5">Bac+5</option>
+                                    </select>
+                                    </div>
+                                    {/* ville de résidence */}                                    
+                                    <div className="form-group">
+                                        <label id="label">Votre ville de résidence :
+                                        <em>*</em>
+                                    </label>
+                                    <select id="horaire" name="horaire" required>
+                                        <option value="Casablanca">Casablanca</option>
+                                        <option value="Rabat">Rabat</option>
+                                        <option value="Tanger">Tanger</option>
+                                        <option value="Marrakech">Marrakech</option>
+                                        <option value="Agadir">Agadir</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                    </div>
+                                    {/* niveau maitrise francais */}                                    
+                                    <div className="form-group">
+                                        <label id="label">Quel est votre niveau de maîtrise de la langue française ?
+                                        <em>*</em>
+                                    </label>
+                                    <select id="horaire" name="horaire" required>
+                                        <option value="Casablanca">Débutant</option>
+                                        <option value="Rabat">Intermédiaire</option>
+                                        <option value="Tanger">Avancé</option>
+                                    </select>
+                                    </div>
+                                    {/* souhaitez-vous rejoindre la 3W Academy */}                                    
+                                    <div className="form-group">
+                                        <label id="label">Pourquoi souhaitez-vous rejoindre la 3W Academy ?
+                                        <em>*</em>
+                                    </label>
+                                    <select id="horaire" name="horaire" required>
+                                        <option value="SWITCHER">Je veux SWITCHER vers une carrière en Développement WEB</option>
+                                        <option value="BOOSTER">Je veux BOOSTER mon profil à travers un portfolio de projets réels</option>
+                                        <option value="AJOUTER">Je veux AJOUTER la compétence Dév à ma compétence actuelle</option>
+                                        <option value="DEMARRER">Je veux DEMARRER un projet ou une startup dans la TECH</option>
+                                        <option value="LANCER">Je veux LANCER ma carrière dans le développement web / mobile</option>
+                                    </select>
+                                    </div>
+                                    {/* Bootcamp */}                                    
+                                    <div className="form-group">
+                                        <label id="label">Bootcamp souhaité :
+                                        <em>*</em>
+                                    </label>
+                                    <select id="horaire" name="horaire" required>
+                                        <option value="START">START</option>
+                                        <option value="MASTERY">MASTERY</option>
+                                    </select>
+                                    </div>
+                                    {/* Rythme  */}                                    
+                                    <div className="form-group">
+                                        <label id="label">Rythme souhaité :
+                                        <em>*</em>
+                                    </label>
+                                    <select id="horaire" name="horaire" required>
+                                        <option value="Temps plein">Temps plein</option>
+                                        <option value="Temps partiel - en présentiel">Temps partiel - en présentiel</option>
+                                        <option value="Temps partiel - en ligne">Temps partiel - en ligne</option>
+                                    </select>
+                                    </div>
+                                    {/* Campus   */}                                    
+                                    <div className="form-group">
+                                        <label id="label">Campus souhaité :
+                                        <em>*</em>
+                                    </label>
+                                    <select id="horaire" name="horaire" required>
+                                        <option value="Casablanca">Casablanca - Tour Habous</option>
+                                        <option value="Online">Online Learning</option>
+                                        <option value="Rabat">Rabat</option>
+                                    </select>
+                                    </div>
+                                    {/* Comment avez-vous connu la 3W Academy ?   */}                                    
+                                    <div className="form-group">
+                                        <label id="label"> Comment avez-vous connu la 3W Academy ?
+                                            <em>*</em>
+                                        </label>
+                                        <select id="horaire" name="horaire" required>
+                                        <option value="connaissance">Par un ami / une connaissance</option>
+                                        <option value="Online">Publicité online</option>
+                                        <option value="search">En faisant des recherches</option>
+                                        <option value="club">A travers mon université / club étudiant</option>
+                                        <option value="Autre">Autre</option>
+                                        </select>
+                                    </div>
                                     <div class="tempContDiv " elemid="tempcontdiv">
                                         <div class="termsContainer">
                                             <input className='check' type="checkbox" id="accept" />
