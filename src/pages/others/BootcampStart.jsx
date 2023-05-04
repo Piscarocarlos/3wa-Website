@@ -5,8 +5,18 @@ import Shape3 from "../../assets/images/shapes/shape-15.png"
 import Breadcumb from './Breadcumb';
 import Offer from './Offer';
 import { Link } from 'react-router-dom';
+import { useFormik } from 'formik';
 
 export default function BootcampStart() {
+
+    const formik = useFormik({
+        initialValues:
+                        {
+          age:'',
+          tel:'',
+          email:'',
+                        }
+                    })
 
     return (
         <div className="main-wrapper">
@@ -84,10 +94,11 @@ export default function BootcampStart() {
                         <div className="col-lg-12 formu">
                             {/* Zoho form added */}
                             <div id="formul">
+                            {/* Change or deletion of the name attributes in the input tag will lead to empty values on record submission */}
                                 <form action='https://forms.zohopublic.com/digital29/form/Condidature/formperma/IyN0pLL11VNAJQAupqDO-ubF0P7VMeBVIMPzzVNPo-E/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
-                                    <input type="hidden" name="zf_referrer_name" value="" />
-                                    <input type="hidden" name="zf_redirect_url" value="" />
-                                    <input type="hidden" name="zc_gad" value="" />
+                                    <input type="hidden" name="zf_referrer_name" value=""/>{/* To Track referrals , place the referrer name within the " " in the above hidden input field */}
+                                    <input type="hidden" name="zf_redirect_url" value=""/>{/* To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field  */}
+                                    <input type="hidden" name="zc_gad" value=""/>{/* If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM */}
                                     <h2 id="h2">Formulaire de prise de contact</h2>
                                     <p id="para">Bonjour HERO,
                                         Merci pour ton intérêt.
@@ -105,22 +116,23 @@ export default function BootcampStart() {
                                         <label id="label"> Age :
                                             <em>*</em>
                                         </label>
-                                        <input type="text" name="Number" value="" maxlength="18" placeholder="" />
-                                    </div>
-                                    {/* Email */}
-                                    <div className="form-group">
-                                        <label id="label"> Adresse email :
-                                            <em>*</em>
-                                        </label>
-                                        <input type="text" maxlength="255" name="Email" value="" fieldType="9" placeholder="" required />
+                                        <input type="text" name="age" value={formik.values.age} onChange={formik.handleChange} maxlength="18" placeholder="" required/>
                                     </div>
                                     {/* Tel */}
                                     <div className="form-group">
                                         <label id="label"> Numéro de télephone :
                                             <em>*</em>
                                         </label>
-                                        <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled="false" maxlength="20" value="" fieldType="11" id="international_PhoneNumber_countrycode" placeholder="" required />
+                                        <input type="text" compname="PhoneNumber" name="tel" phoneFormat="1" isCountryCodeEnabled="false" maxlength="20" value={formik.values.tel} onChange={formik.handleChange} fieldType="11" id="international_PhoneNumber_countrycode" placeholder="" required/>
                                     </div>
+                                    {/* Email */}
+                                    <div className="form-group">
+                                        <label id="label"> Adresse email :
+                                            <em>*</em>
+                                        </label>
+                                        <input type="text" maxlength="255" name="email" value={formik.values.email} onChange={formik.handleChange} fieldType="9" placeholder="" required/>
+                                    </div>
+                                    
                                     {/* Situation Actuelle */}                                    
                                     <div className="form-group">
                                         <label id="label">Votre situation actuelle :
@@ -236,7 +248,7 @@ export default function BootcampStart() {
                                             <label for="accept">J'accepte les termes et conditions.</label>
                                         </div>
                                     </div>
-                                    <button id="btn" type="submit">Validé</button>
+                                    <button id="btn" type="submit" value="submit">Validé</button>
                                 </form>
                             </div>
                         </div>
