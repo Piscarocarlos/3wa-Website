@@ -6,11 +6,9 @@ import Breadcumb from './Breadcumb';
 import Offer from './Offer';
 import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
-import { useState } from 'react';
 
 export default function BootcampStart() {
 
-    
     const formik = useFormik({
         initialValues:
                         {
@@ -113,12 +111,12 @@ export default function BootcampStart() {
                                         <label id="label">Prénom
                                         <em>*</em>
                                         </label>
-                                        <input type="text" maxlength="255" name="Name_First" fieldType="7" value={formik.values.Name_First} onChange={formik.handleChange} placeholder="" required/>
+                                        <input type="text" maxlength="255" name="Name_First" fieldType="7" value={formik.values.Name_First} onChange={formik.handleChange} placeholder="" />
 
                                         <label id="label">Nom
                                         <em>*</em>
                                         </label>
-                                        <input type="text" maxlength="255" name="Name_Last" value={formik.values.Name_Last} onChange={formik.handleChange} fieldType="7" placeholder="" required/>
+                                        <input type="text" maxlength="255" name="Name_Last" value={formik.values.Name_Last} onChange={formik.handleChange} fieldType="7" placeholder="" />
                                         
                                     </div>
                                     {/* Age */}
@@ -126,86 +124,66 @@ export default function BootcampStart() {
                                         <label id="label"> Age 
                                         <em>*</em>
                                         </label>
-                                        <input type="text" name="Number" value={formik.values.Number} onChange={formik.handleChange} maxlength="18" placeholder="" required/>
+                                        <input type="text" name="Number" value={formik.values.Number} onChange={formik.handleChange} maxlength="18" placeholder="" />
                                     </div>
                                     {/* Tel */}
                                     <div className="form-group">
                                         <label id="label"> Numéro de téléphone 
                                         <em>*</em>
                                         </label>
-                                        <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled="false" maxlength="20" value={formik.values.PhoneNumber_countrycode} onChange={formik.handleChange} fieldType="11" id="international_PhoneNumber_countrycode" placeholder="" required/>
+                                        <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled="false" maxlength="20" value={formik.values.PhoneNumber_countrycode} onChange={formik.handleChange} fieldType="11" id="international_PhoneNumber_countrycode" placeholder="" />
                                     </div>
                                     {/* Email */}
                                     <div className="form-group">
                                         <label id="label"> E-mail 
                                         <em>*</em>
                                         </label>
-                                        <input type="text" maxlength="255" name="Email" value={formik.values.Email} onChange={formik.handleChange} fieldType="9" placeholder="" required/>
+                                        <input type="text" maxlength="255" name="Email" value={formik.values.Email} onChange={formik.handleChange} fieldType="9" placeholder="" />
                                     </div>
                                     
                                     {/* Situation Actuelle */}                                    
                                     <div className="form-group">
                                         <label id="label">Votre situation actuelle :
                                         <em>*</em>
-                                        </label>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="Checkbox_1" name="Checkbox" value="Employ&eacute;&#x20;&agrave;&#x20;temps&#x20;plein"/>
-                                            <label for="Checkbox_1">Employ&eacute;&#x20;&agrave;&#x20;temps&#x20;plein</label>
-                                            </div>
-                                        </div>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="Checkbox_2" name="Checkbox" value="En&#x20;recherche&#x20;d&#x27;emploi&#x20;depuis&#x20;plus&#x20;d&#x27;un&#x20;an"/>
-                                            <label for="Checkbox_2">En&#x20;recherche&#x20;d&#x27;emploi&#x20;depuis&#x20;plus&#x20;d&#x27;un&#x20;an</label>
-                                            </div>
-                                        </div>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="Checkbox_3" name="Checkbox" value="Etudiant"/>
-                                            <label for="Checkbox_3">Etudiant</label>
-                                            </div>
-                                        </div>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="Checkbox_4" name="Checkbox" value="Fraichement&#x20;dipl&ocirc;m&eacute;,&#x20;en&#x20;recherche&#x20;d&#x27;emploi&#x20;&#x28;&lt;1&#x20;an&#x29;"/>
-                                            <label for="Checkbox_4">Fraichement&#x20;dipl&ocirc;m&eacute;,&#x20;en&#x20;recherche&#x20;d&#x27;emploi&#x20;&#x28;&lt;1&#x20;an&#x29;</label>
-                                            </div>
-                                        </div>   
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="Checkbox_5" name="Checkbox" value="Freelancer"/>
-                                            <label for="Checkbox_5">Freelancer</label>
-                                            </div>
-                                        </div>                      
+                                    </label>
+                                        <input type="checkbox" id="Checkbox_1" name="Checkbox" value="Employ&eacute;&#x20;&agrave;&#x20;temps&#x20;plein"/>
+                                        <label for="Checkbox_1">Employ&eacute;&#x20;&agrave;&#x20;temps&#x20;plein</label>
+                                        <input type="checkbox" id="Checkbox_2" name="Checkbox" value="En&#x20;recherche&#x20;d&#x27;emploi&#x20;depuis&#x20;plus&#x20;d&#x27;un&#x20;an"/>
+                                        <label for="Checkbox_2">En&#x20;recherche&#x20;d&#x27;emploi&#x20;depuis&#x20;plus&#x20;d&#x27;un&#x20;an</label>
+                                        <input type="checkbox" id="Checkbox_3" name="Checkbox" value="Etudiant"/>
+                                        <label for="Checkbox_3">Etudiant</label>
+                                        <input type="checkbox" id="Checkbox_4" name="Checkbox" value="Fraichement&#x20;dipl&ocirc;m&eacute;,&#x20;en&#x20;recherche&#x20;d&#x27;emploi&#x20;&#x28;&lt;1&#x20;an&#x29;"/>
+                                        <label for="Checkbox_4">Fraichement&#x20;dipl&ocirc;m&eacute;,&#x20;en&#x20;recherche&#x20;d&#x27;emploi&#x20;&#x28;&lt;1&#x20;an&#x29;</label>
+                                        <input type="checkbox" id="Checkbox_5" name="Checkbox" value="Freelancer"/>
+                                        <label for="Checkbox_5">Freelancer</label>
                                     </div>
                                     {/* Niveau d'etude */}                                    
                                     <div className="form-group">
                                         <label id="label">Votre niveu d'étude :
                                         <em>*</em>
-                                        </label>
-                                        <select id="horaire" name="Dropdown2">
+                                    </label>
+                                    <select id="horaire" name="Dropdown2" >
                                         <option selected="true" value="-Select-">-Select-</option>
                                         <option value="Bac&#x2b;5&#x20;et&#x20;&#x2b;">Bac&#x2b;5 et &#x2b;</option>
                                         <option value="Bac&#x2b;3&#x2f;4">Bac&#x2b;3&#x2f;4</option>
-                                        <option value="Bac&#x2b;2" >Bac&#x2b;2</option>
+                                        <option value="Bac&#x2b;2" selected>Bac&#x2b;2</option>
                                         <option value="Bachelier">Bachelier</option>
                                         <option value="Sans&#x20;Bac">Sans Bac</option>
-                                        </select>
+                                    </select>
                                     </div>
                                     {/* ville de résidence */}                                    
                                     <div className="form-group">
                                         <label id="label">Votre ville de résidence :
                                         <em>*</em>
                                     </label>
-                                    <select id="horaire" name="Dropdown3">
-                                    <option selected="true" value="-Select-">-Select-</option>
-                                    <option value="Casablanca">Casablanca</option>
-                                    <option value="Rabat">Rabat</option>
-                                    <option value="Tanger" >Tanger</option>
-                                    <option value="Marrakech">Marrakech</option>
-                                    <option value="Agadir">Agadir</option>
-                                    <option value="Autre">Autre</option>
+                                    <select id="horaire" name="Dropdown3" >
+                                        <option selected="true" value="-Select-">-Select-</option>
+                                        <option value="Casablanca">Casablanca</option>
+                                        <option value="Rabat">Rabat</option>
+                                        <option value="Tanger" selected>Tanger</option>
+                                        <option value="Marrakech">Marrakech</option>
+                                        <option value="Agadir">Agadir</option>
+                                        <option value="Autre">Autre</option>
                                     </select>
                                     </div>
                                     {/* niveau maitrise francais */}                                    
@@ -213,11 +191,11 @@ export default function BootcampStart() {
                                         <label id="label">Quel est votre niveau de maîtrise de la langue française ?
                                         <em>*</em>
                                     </label>
-                                    <select id="horaire" name="Dropdown5">
-                                    <option selected="true" value="-Select-">-Select-</option>
-                                    <option value="D&eacute;butant">D&eacute;butant</option>
-                                    <option value="Interm&eacute;diaire">Interm&eacute;diaire</option>
-                                    <option value="Avanc&eacute;">Avanc&eacute;</option>
+                                    <select id="horaire" name="Dropdown5" >
+                                        <option selected="true" value="-Select-">-Select-</option>
+                                        <option value="D&eacute;butant">D&eacute;butant</option>
+                                        <option value="Interm&eacute;diaire">Interm&eacute;diaire</option>
+                                        <option value="Avanc&eacute;">Avanc&eacute;</option>
                                     </select>
                                     </div>
                                     {/* souhaitez-vous rejoindre la 3W Academy */}                                    
@@ -225,13 +203,13 @@ export default function BootcampStart() {
                                         <label id="label">Pourquoi souhaitez-vous rejoindre la 3W Academy ?
                                         <em>*</em>
                                     </label>
-                                    <select id="horaire" name="Dropdown1">
-                                    <option selected="true" value="-Select-">-Select-</option>
-                                    <option value="Je&#x20;veux&#x20;SWITCHER&#x20;vers&#x20;une&#x20;carri&egrave;re&#x20;en&#x20;D&eacute;veloppement&#x20;WEB">Je veux SWITCHER vers une carri&egrave;re en D&eacute;veloppement WEB</option>
-                                    <option value="Je&#x20;veux&#x20;BOOSTER&#x20;mon&#x20;profil&#x20;&agrave;&#x20;travers&#x20;un&#x20;portfolio&#x20;de&#x20;projets&#x20;r&eacute;els">Je veux BOOSTER mon profil &agrave; travers un portfolio de projets r&eacute;els</option>
-                                    <option value="Je&#x20;veux&#x20;AJOUTER&#x20;la&#x20;comp&eacute;tence&#x20;D&eacute;v&#x20;&agrave;&#x20;ma&#x20;comp&eacute;tence&#x20;actuelle">Je veux AJOUTER la comp&eacute;tence D&eacute;v &agrave; ma comp&eacute;tence actuelle</option>
-                                    <option value="Je&#x20;veux&#x20;DEMARRER&#x20;un&#x20;projet&#x20;ou&#x20;une&#x20;startup&#x20;dans&#x20;la&#x20;TECH">Je veux DEMARRER un projet ou une startup dans la TECH</option>
-                                    <option value="Je&#x20;veux&#x20;LANCER&#x20;ma&#x20;carri&egrave;re&#x20;dans&#x20;le&#x20;d&eacute;veloppement&#x20;web&#x20;&#x2f;&#x20;mobile">Je veux LANCER ma carri&egrave;re dans le d&eacute;veloppement web &#x2f; mobile</option>
+                                    <select id="horaire" name="Dropdown1" >
+                                        <option selected="true" value="-Select-">-Select-</option>
+                                        <option value="Je&#x20;veux&#x20;SWITCHER&#x20;vers&#x20;une&#x20;carri&egrave;re&#x20;en&#x20;D&eacute;veloppement&#x20;WEB">Je veux SWITCHER vers une carri&egrave;re en D&eacute;veloppement WEB</option>
+                                        <option value="Je&#x20;veux&#x20;BOOSTER&#x20;mon&#x20;profil&#x20;&agrave;&#x20;travers&#x20;un&#x20;portfolio&#x20;de&#x20;projets&#x20;r&eacute;els">Je veux BOOSTER mon profil &agrave; travers un portfolio de projets r&eacute;els</option>
+                                        <option value="Je&#x20;veux&#x20;AJOUTER&#x20;la&#x20;comp&eacute;tence&#x20;D&eacute;v&#x20;&agrave;&#x20;ma&#x20;comp&eacute;tence&#x20;actuelle">Je veux AJOUTER la comp&eacute;tence D&eacute;v &agrave; ma comp&eacute;tence actuelle</option>
+                                        <option value="Je&#x20;veux&#x20;DEMARRER&#x20;un&#x20;projet&#x20;ou&#x20;une&#x20;startup&#x20;dans&#x20;la&#x20;TECH">Je veux DEMARRER un projet ou une startup dans la TECH</option>
+                                        <option value="Je&#x20;veux&#x20;LANCER&#x20;ma&#x20;carri&egrave;re&#x20;dans&#x20;le&#x20;d&eacute;veloppement&#x20;web&#x20;&#x2f;&#x20;mobile">Je veux LANCER ma carri&egrave;re dans le d&eacute;veloppement web &#x2f; mobile</option>
                                     </select>
                                     </div>
                                     {/* Bootcamp */}                                    
@@ -239,29 +217,21 @@ export default function BootcampStart() {
                                         <label id="label">Bootcamp souhaité :
                                         <em>*</em>
                                     </label>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                                <input type="checkbox" id="MultipleChoice_1" name="MultipleChoice" value="START"/>
-                                                <label for="MultipleChoice_1">START</label>
-                                            </div>
-                                        </div>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">  
-                                                <input type="checkbox" id="MultipleChoice_2" name="MultipleChoice" value="MASTERY"/>
-                                                <label for="MultipleChoice_2">MASTERY</label>
-                                            </div>
-                                        </div>                                           
+                                        <input type="checkbox" id="MultipleChoice_1" name="MultipleChoice" value="START"/>
+                                        <label for="MultipleChoice_1">START</label>
+                                        <input type="checkbox" id="MultipleChoice_2" name="MultipleChoice" value="MASTERY"/>
+                                        <label for="MultipleChoice_2">MASTERY</label>
                                     </div>
                                     {/* Rythme  */}                                    
                                     <div className="form-group">
                                         <label id="label">Rythme souhaité :
                                         <em>*</em>
                                     </label>
-                                    <select id="horaire" name="Dropdown4">
-                                    <option selected="true" value="-Select-">-Select-</option>
-                                    <option value="Temps&#x20;plein">Temps plein</option>
-                                    <option value="Temps&#x20;partiel&#x20;-&#x20;en&#x20;pr&eacute;sentiel">Temps partiel - en pr&eacute;sentiel</option>
-                                    <option value="Temps&#x20;partiel&#x20;-&#x20;en&#x20;ligne">Temps partiel - en ligne</option>
+                                    <select id="horaire" name="Dropdown4" >
+                                        <option selected="true" value="-Select-">-Select-</option>
+                                        <option value="Temps&#x20;plein">Temps plein</option>
+                                        <option value="Temps&#x20;partiel&#x20;-&#x20;en&#x20;pr&eacute;sentiel">Temps partiel - en pr&eacute;sentiel</option>
+                                        <option value="Temps&#x20;partiel&#x20;-&#x20;en&#x20;ligne">Temps partiel - en ligne</option>
                                     </select>
                                     </div>
                                     {/* Campus   */}                                    
@@ -269,11 +239,11 @@ export default function BootcampStart() {
                                         <label id="label">Campus souhaité :
                                         <em>*</em>
                                     </label>
-                                    <select id="horaire" name="Dropdown">
-                                    <option selected="true" value="-Select-">-Select-</option>
-                                    <option value="Casablanca&#x20;-&#x20;Tour&#x20;Habous" selected>Casablanca - Tour Habous</option>
-                                    <option value="Online&#x20;Learning">Online Learning</option>
-                                    <option value="Rabat">Rabat</option>
+                                    <select id="horaire" name="Dropdown" >
+                                        <option selected="true" value="-Select-">-Select-</option>
+                                        <option value="Casablanca&#x20;-&#x20;Tour&#x20;Habous" selected>Casablanca - Tour Habous</option>
+                                        <option value="Online&#x20;Learning">Online Learning</option>
+                                        <option value="Rabat">Rabat</option>
                                     </select>
                                     </div>
                                     {/* Comment avez-vous connu la 3W Academy ?   */}                                    
@@ -281,38 +251,23 @@ export default function BootcampStart() {
                                         <label id="label"> Comment avez-vous connu la 3W Academy ?
                                             <em>*</em>
                                         </label>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="MultipleChoice1_1" name="MultipleChoice1" value="Par&#x20;un&#x20;ami&#x20;&#x2f;&#x20;une&#x20;connaissance"/>
-                                            <label for="MultipleChoice1_1">Par&#x20;un&#x20;ami&#x20;&#x2f;&#x20;une&#x20;connaissance</label>
-                                            </div>
-                                        </div>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="MultipleChoice1_2" name="MultipleChoice1" value="Publicit&eacute;&#x20;online"/>
-                                            <label for="MultipleChoice1_2">Publicit&eacute;&#x20;online</label>
-                                            </div>
-                                        </div>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="MultipleChoice1_3" name="MultipleChoice1" value="En&#x20;faisant&#x20;des&#x20;recherches"/>
-                                            <label for="MultipleChoice1_3">En&#x20;faisant&#x20;des&#x20;recherches</label>
-                                            </div>
-                                        </div>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="MultipleChoice1_4" name="MultipleChoice1" value="A&#x20;travers&#x20;mon&#x20;universit&eacute;&#x20;&#x2f;&#x20;club&#x20;&eacute;tudiant"/>
-                                            <label for="MultipleChoice1_4">A&#x20;travers&#x20;mon&#x20;universit&eacute;&#x20;&#x2f;&#x20;club&#x20;&eacute;tudiant</label>
-                                            </div>
-                                        </div>
-                                        <div class="tempContDiv" elemid="tempcontdiv">
-                                            <div class="termsContainer">
-                                            <input type="checkbox" id="MultipleChoice1_5" name="MultipleChoice1" value="Autre"/>
-                                            <label for="MultipleChoice1_5">Autre</label>
-                                            </div>
+                                        <input type="checkbox" id="MultipleChoice1_1" name="MultipleChoice1" value="Par&#x20;un&#x20;ami&#x20;&#x2f;&#x20;une&#x20;connaissance"/>
+                                        <label for="MultipleChoice1_1">Par&#x20;un&#x20;ami&#x20;&#x2f;&#x20;une&#x20;connaissance</label>
+                                        <input type="checkbox" id="MultipleChoice1_2" name="MultipleChoice1" value="Publicit&eacute;&#x20;online"/>
+                                        <label for="MultipleChoice1_2">Publicit&eacute;&#x20;online</label>
+                                        <input type="checkbox" id="MultipleChoice1_3" name="MultipleChoice1" value="En&#x20;faisant&#x20;des&#x20;recherches"/>
+                                        <label for="MultipleChoice1_3">En&#x20;faisant&#x20;des&#x20;recherches</label>
+                                        <input type="checkbox" id="MultipleChoice1_4" name="MultipleChoice1" value="A&#x20;travers&#x20;mon&#x20;universit&eacute;&#x20;&#x2f;&#x20;club&#x20;&eacute;tudiant"/>
+                                        <label for="MultipleChoice1_4">A&#x20;travers&#x20;mon&#x20;universit&eacute;&#x20;&#x2f;&#x20;club&#x20;&eacute;tudiant</label>
+                                        <input type="checkbox" id="MultipleChoice1_5" name="MultipleChoice1" value="Autre"/>
+                                        <label for="MultipleChoice1_5">Autre</label>
+                                    </div>
+                                    <div class="tempContDiv " elemid="tempcontdiv">
+                                        <div class="termsContainer">
+                                            <input className='check' type="checkbox" id="accept" />
+                                            <label for="accept">J'accepte les termes et conditions.</label>
                                         </div>
                                     </div>
-                                    
                                     <button id="btn" type="submit" value="submit" formaction="https://forms.zohopublic.com/digital29/form/Condidature/formperma/IyN0pLL11VNAJQAupqDO-ubF0P7VMeBVIMPzzVNPo-E/htmlRecords/submit">Validé</button>
                                 </form>
                             </div>
@@ -352,6 +307,6 @@ function StepOne() {
 
 function StepTwo() {
     return <>
-        Hello
+        Hello 
     </>
 }
