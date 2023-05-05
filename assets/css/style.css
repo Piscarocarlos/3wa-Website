@@ -5541,7 +5541,7 @@ input[type="radio"] {
     position: relative;
     font-size: 16px;
     line-height: 26px;
-    color: var(--body-color);
+    color: #000000;
     font-weight: 500;
     padding-left: 34px;
     cursor: pointer;
